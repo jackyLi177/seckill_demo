@@ -1,24 +1,16 @@
 package com.jacky.seckill_demo.service;
 
-import com.jacky.seckill_demo.controller.SecKillController;
 import com.jacky.seckill_demo.mapper.ProductRecordMapper;
 import com.jacky.seckill_demo.mapper.ProductStorageMapper;
 import com.jacky.seckill_demo.model.ProductRecord;
 import com.jacky.seckill_demo.model.ProductStorage;
 import lombok.extern.slf4j.Slf4j;
-import org.apache.ibatis.transaction.Transaction;
-import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.datasource.DataSourceTransactionManager;
 import org.springframework.stereotype.Service;
-import org.springframework.transaction.PlatformTransactionManager;
 import org.springframework.transaction.TransactionDefinition;
-import org.springframework.transaction.TransactionManager;
 import org.springframework.transaction.TransactionStatus;
-import org.springframework.transaction.annotation.Transactional;
 
-import java.sql.Connection;
-import java.sql.SQLException;
 import java.util.Random;
 
 /**
