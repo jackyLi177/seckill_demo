@@ -20,6 +20,14 @@ spring:
       max-evictable-idle-time-millis: 600000
       time-between-eviction-runs-millis: 600000
       connection-properties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=5000
+  redis:
+    host: 39.100.194.182
+    port: 6379
+    password:
+    max-active: 100
+    max-idle: 10
+    max-wait: 30000
+    timeout: 3000
 
 mybatis:
   mapper-locations: classpath*:mapper/*.xml
